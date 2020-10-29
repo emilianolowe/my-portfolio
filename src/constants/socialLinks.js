@@ -1,37 +1,25 @@
 import React from "react"
 import {
-  FaFacebookSquare,
   FaLinkedin,
-  FaDribbbleSquare,
-  FaBehanceSquare,
   FaTwitterSquare,
+  FaGithub,
 } from "react-icons/fa"
 
 const data = [
-  { // change this to direct to a page about why I'm not using Facebook.
+  {
     id: 1,
-    icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
-    url: "https://www.twitter.com",
+    icon: <FaLinkedin className="social-icon"></FaLinkedin>,
+    url: "https://www.linkedin.com/in/emiliano-lowe/",
   },
   {
     id: 2,
-    icon: <FaLinkedin className="social-icon"></FaLinkedin>,
-    url: "https://www.twitter.com",
+    icon: <FaGithub className="social-icon"></FaGithub>,
+    url: "https://github.com/emilianolowe",
   },
   {
     id: 3,
-    icon: <FaDribbbleSquare className="social-icon"></FaDribbbleSquare>,
-    url: "https://www.twitter.com",
-  },
-  {
-    id: 4,
-    icon: <FaBehanceSquare className="social-icon"></FaBehanceSquare>,
-    url: "https://www.twitter.com",
-  },
-  {
-    id: 5,
-    icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
-    url: "https://www.twitter.com",
+    icon: <FaTwitterSquare className="social-icon" ></FaTwitterSquare>,
+    url: "https://twitter.com/emilianorlowe",
   },
 ]
 const links = data.map(link => {
