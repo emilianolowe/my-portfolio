@@ -34,3 +34,5 @@ const Component = () => {
       },
     },
 ```
+
+8. [![Netlify Status](https://api.netlify.com/api/v1/badges/9d2dbbf0-a536-4812-be5f-4e4c1cb15e11/deploy-status)](https://app.netlify.com/sites/zen-bohr-5d0b7e/deploys)
