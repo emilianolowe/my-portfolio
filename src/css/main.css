@@ -190,7 +190,7 @@ p {
 /* social links */
 .social-links {
   margin-top: 2rem;
-  width: 15rem;
+  width: 7.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -230,8 +230,8 @@ Navbar
   align-items: center;
 }
 .nav-header img {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 .toggle-btn {
   font-size: 2rem;
@@ -573,7 +573,7 @@ Jobs
   box-shadow: 0 2px var(--clr-primary-5);
 }
 .job-info {
-  /* min-height: 420px; */
+  min-height: 420px;
 }
 .job-info h3 {
   font-weight: 400;
@@ -592,7 +592,7 @@ Jobs
 .job-desc {
   display: grid;
   grid-template-columns: auto 1fr;
-  column-gap: 2rem;
+  column-gap: .5rem;
   align-items: center;
   margin-bottom: 1.25rem;
 }
@@ -650,12 +650,12 @@ Projects
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom right, var(--clr-primary-5), #222);
-  opacity: 0.85;
-  transition: var(--transition);
+  /* background: linear-gradient(to bottom right, var(--clr-primary-5), #222); */
+  /* opacity: 0.85; */
+  /* transition: var(--transition); */
 }
 .project:hover .project-img::after {
-  opacity: 0;
+  /* opacity: 0; */
 }
 .project-info {
   background: var(--clr-white);
@@ -675,7 +675,7 @@ Projects
   font-size: 1.5rem;
 }
 .project-desc {
-  word-spacing: 15px;
+  /* word-spacing: 2px; */
   color: var(--clr-grey-3);
 }
 .project-stack {
@@ -1040,4 +1040,27 @@ Blog Template
   width: 15rem;
   height: 15rem;
   margin: 3rem 0;
+}
+/*
+===============
+Image Gallery
+===============
+*/
+.image-grid {
+  display: grid;
+  padding: 10px;
+  overflow: hidden;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-auto-rows: minmax(50px, auto);
+}
+.image-grid .image-item:nth-child(5n) {
+  grid-column-end: span 2;
+}
+.image-grid img {
+  border-radius: 1%;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

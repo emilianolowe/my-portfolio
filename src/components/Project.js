@@ -1,7 +1,7 @@
 import React from "react"
-import PropTypes from "prop-types"
 import Image from "gatsby-image"
-import { FaDivide, FaGithubSquare, FaShareSquare } from "react-icons/fa"
+import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
+
 const Project = ({description, title, github, stack, url, image, index}) => {
   return (
     <article className="project">
@@ -33,7 +33,5 @@ const Project = ({description, title, github, stack, url, image, index}) => {
     </article>
   );
 }
-
-Project.propTypes = {}
 
 export default Project

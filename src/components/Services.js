@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Link } from "gatsby"
 import Title from "./Title"
 import services from "../constants/services"
 
@@ -18,6 +18,7 @@ const Services = () => {
           </article>
         })}
       </div>
+      <Link to='/contact' className="btn center-btn">Contact Me</Link>
     </section>
   );
 }
